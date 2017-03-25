@@ -1,6 +1,6 @@
 function plot_data(i, j, iname, jname, X, y)
-## Plots attribute i on x axis, attributed y on y axis
-## and labels points for all classes in dataset (X - attributes, y - labels).
+%% Plots attribute i on x axis, attributed y on y axis
+%% and labels points for all classes in dataset (X - attributes, y - labels).
 
     # Get the indexes of instances from 3 iris classes.
     c1 = find(y == 0);

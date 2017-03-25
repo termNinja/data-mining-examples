@@ -1,6 +1,6 @@
 function [decoded_label] = decode_label(label)
-## Returns the name of given label.
-## 0 for Setosa, 1 for Virginica and 2 for Versicolor.
+%% Returns the name of given label.
+%% 0 for Setosa, 1 for Virginica and 2 for Versicolor.
 
     if (label == 0)
         decoded_label = 'Setosa';

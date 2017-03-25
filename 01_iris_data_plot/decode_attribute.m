@@ -1,6 +1,6 @@
 function [attr_name] = decode_attribute(attr)
-## Returns the string name of given attribute.
-## Attribute can be 1, 2, 3 or 4.
+%% Returns the string name of given attribute.
+%% Attribute can be 1, 2, 3 or 4.
 
     if (attr == 1)
         attr_name = 'Petal width';
