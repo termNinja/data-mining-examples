@@ -11,23 +11,23 @@ function plot_data(i, j, iname, jname, X, y)
     h = figure;
 
     # Plot class 1
-    plot(X(c1, i), X(c1, j), "r*", "markersize", msize);
+    plot(X(c1, i), X(c1, j), 'r*', 'markersize', msize);
     hold on;
 
     # Plot class 2
-    plot(X(c2, i), X(c2, j), "b+");
+    plot(X(c2, i), X(c2, j), 'b+');
 
     # Plot class 3
-    plot(X(c3, i), X(c3, j), "gx");
+    plot(X(c3, i), X(c3, j), 'gx');
 
     legend(decode_label(0), decode_label(1), decode_label(2));
     xlabel(iname);
     ylabel(jname);
 
     # Save output plot
-    fpath = sprintf("plots/fig_%d_%d.pdf", i, j);
+    fpath = sprintf('plots/fig_%d_%d.pdf', i, j);
     saveas(h, fpath);
-    fpath = sprintf("plots/fig_%d_%d.png", i, j);
+    fpath = sprintf('plots/fig_%d_%d.png', i, j);
     saveas(h, fpath);
 
     hold off;

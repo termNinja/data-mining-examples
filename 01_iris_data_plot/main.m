@@ -27,6 +27,6 @@ mkdir plots;
 for i = 1:4
     for j = i+1:4
         plot_data(i, j, decode_attribute(i), decode_attribute(j), X, y);
-        printf("Plotting: %s - %s\n", decode_attribute(i), decode_attribute(j));
+        printf('Plotting: %s - %s\n', decode_attribute(i), decode_attribute(j));
     endfor
 endfor
